@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    border: 2px solid green;
+    height: 13vh;
+
+}
+#tela-inicial{
+    border: 2px solid rgb(179, 224, 15);
+    height: 87vh;
+}
+#sobre-4safe{
+    border: 2px solid rgb(187, 5, 81);
+    height: 90vh;
+}
+#seguro-vida{
+    border: 2px solid rgb(12, 162, 189);
+    height: 90vh;
+}
+#seguro-auto{
+    border: 2px solid rgb(212, 72, 7);
+    height: 90vh;
+}
+#contato{
+    border: 2px solid green;
+    height: 90vh;
+}
+#footer{
+    border: 2px solid rgb(243, 186, 28);
+    height: 13vh;
+}
