@@ -9,12 +9,37 @@
 }
 #tela-inicial{
     border: 2px solid rgb(179, 224, 15);
+    background-color: #3B4F66;
+    color: white;
     height: 87vh;
 }
+
+/* main > input{
+        margin-right: 66px;
+        margin-top: 33px;
+        margin-bottom: 33px;
+        padding: 10px;
+        color: #759F6A;
+} */
+
+
 #sobre-4safe{
     border: 2px solid rgb(187, 5, 81);
+    background-color: #3B4F66;
+    color: white;
     height: 90vh;
 }
+
+/*#sobre-4safe.pessoas img{
+    
+}
+
+#sobre-4safe.smartphone img{
+
+} */
+
+
+
 #seguro-vida{
     border: 2px solid rgb(12, 162, 189);
     height: 90vh;
