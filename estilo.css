@@ -2,17 +2,89 @@
     margin: 0;
     padding: 0;
 }
-#header{
-    border: 2px solid green;
-    height: 13vh;
 
+a {
+    text-decoration: none;
 }
+
+header {
+    height: 13vh;
+    background-color: #3B4F66;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-header {
+    width: 170px;
+    padding-left: 50px;
+}
+
+#nav-header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+#nav-header a {
+    color: white;
+    margin-right: 20px;
+}
+
+#nav-header button {
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #759f6a;
+}
+
 #tela-inicial{
     border: 2px solid rgb(179, 224, 15);
     background-color: #3B4F66;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     height: 87vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+#apresentacao-tela-inicial {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#tela-inicial figure > img {
+    width: 45em;
+    height: auto;
+    margin-top: 125px;
+}
+
+#apresentacao-tela-inicial h1, p {
+    margin-bottom: 50px;
+}
+
+#apresentacao-tela-inicial button {
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #759f6a;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+
+
 
 /* main > input{
         margin-right: 66px;
