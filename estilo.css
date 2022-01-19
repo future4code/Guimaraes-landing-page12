@@ -8,13 +8,25 @@ a {
 }
 
 header {
-    height: 13vh;
+    
     background-color: #3B4F66;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+button {
+    cursor: pointer;
+    
+}
+
+
+button:active {
+    transform: scale(1.1);
+}
+
+
 
 #logo-header {
     width: 170px;
@@ -43,7 +55,6 @@ header {
 }
 
 #tela-inicial{
-    border: 2px solid rgb(179, 224, 15);
     background-color: #3B4F66;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -66,10 +77,19 @@ header {
     width: 45em;
     height: auto;
     margin-top: 125px;
+    margin-left: 100px;
 }
 
 #apresentacao-tela-inicial h1, p {
     margin-bottom: 50px;
+}
+
+#apresentacao-tela-inicial h1 {
+    font-size: 35px;
+}
+
+#apresentacao-tela-inicial p {
+    font-size: 20px;
 }
 
 #apresentacao-tela-inicial button {
@@ -81,7 +101,6 @@ header {
     color: white;
     padding: 15px;
     border-radius: 5px;
-    
 }
 
 
@@ -99,7 +118,6 @@ header {
     border: 2px solid rgb(187, 5, 81);
     background-color: #3B4F66;
     color: white;
-    height: 90vh;
 }
 
 /*#sobre-4safe.pessoas img{
