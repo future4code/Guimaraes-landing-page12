@@ -113,16 +113,66 @@ header {
 
 
 #seguro-vida{
-    border: 2px solid rgb(12, 162, 189);
-    height: 90vh;
+    
 }
 #seguro-auto{
-    border: 2px solid rgb(212, 72, 7);
-    height: 90vh;
+    
 }
 #contato{
-    border: 2px solid green;
-    height: 90vh;
+    
+}
+
+@media screen and (max-width: 588px){
+    #logo{
+        display: none;
+    }
+    #footer #rodape>div {
+       margin: 20px 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 10vh 10vh;
+        width: 100vw;
+    }
+     
+    #menu-footer ul{
+       display: flex;
+        flex-direction: column;
+    }
+    #menu-footer ul li{
+        margin: 10px 0;
+    }
+    #redes-sociais{
+       
+        justify-self: center;
+    }
+    #redes-sociais {
+        height: 100%;
+        
+    }
+    #rodape{
+        margin-bottom: 100px;
+    }
+}
+@media screen and (min-width: 589px) and (max-width:769px) {
+    #logo{
+        display: none;
+    }
+    #footer #rodape>div{
+        position: relative;
+        left: 70px;
+        
+        
+    }
+    #footer #menu-footer ul{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and(min-width:770px) and (max-width:992px) {
+    
+}
+@media screen and(min-width:993px) and (max-width:1200px) {
+    
 }
 
 /*   Footer */
@@ -164,41 +214,7 @@ header {
     background-color: #759f6a;
     border-radius: 30px;
 }
-@media screen and (max-width:661px) {
- #logo{
-     display: none;
- }
- #footer #rodape>div {
-    margin: 20px 0;
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 10vh 10vh;
-     width: 100vw;
- }
-  
- #menu-footer ul{
-    display: flex;
-     flex-direction: column;
- }
- #menu-footer ul li{
-     margin: 10px 0;
- }
- #redes-sociais{
-    
-     justify-self: center;
- }
-    
-    
-}
-@media screen and (max-width:629px){
-    #redes-sociais {
-        height: 100%;
-        
-    }
-    #rodape{
-        margin-bottom: 100px;
-    }
-} 
+
  #redes-sociais{
     margin: 20px 0;
     width: 70vw;
