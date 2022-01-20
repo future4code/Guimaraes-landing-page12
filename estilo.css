@@ -124,7 +124,102 @@ header {
     border: 2px solid green;
     height: 90vh;
 }
+
+/*   Footer */
 #footer{
-    border: 2px solid rgb(243, 186, 28);
-    height: 13vh;
+    background-color: #3b4f66;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+#footer div a img{
+    height: 7vh;
+}
+#redes-sociais a{
+    margin: 0 12px;
+}
+#redes-sociais a:hover{
+    border: 3px solid #759f6a ;
+    background-color: #759f6a;
+    border-radius: 30px;
+}
+#footer div  #logo img{
+    height: 24vh;
+}
+#footer #menu-footer ul{
+    list-style: none;
+    display: flex;
+    
+    
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#footer #menu-footer ul li a{
+    text-decoration: none;
+}
+#footer #menu-footer ul li:hover{
+    background-color: #759f6a;
+    border-radius: 30px;
+}
+@media screen and (max-width:661px) {
+ #logo{
+     display: none;
+ }
+ #footer #rodape>div {
+    margin: 20px 0;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 10vh 10vh;
+     width: 100vw;
+ }
+  
+ #menu-footer ul{
+    display: flex;
+     flex-direction: column;
+ }
+ #menu-footer ul li{
+     margin: 10px 0;
+ }
+ #redes-sociais{
+    
+     justify-self: center;
+ }
+    
+    
+}
+@media screen and (max-width:629px){
+    #redes-sociais {
+        height: 100%;
+        
+    }
+    #rodape{
+        margin-bottom: 100px;
+    }
+} 
+ #redes-sociais{
+    margin: 20px 0;
+    width: 70vw;
+    
+    
+ }
+ 
+
+#footer #rodape{
+    display: grid;
+    grid-template-columns: 20vw 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    
+    
+}
+
+#footer #menu-footer ul li a{
+    color: white;
+    margin: 0 20px;
 }
