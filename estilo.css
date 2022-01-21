@@ -1,4 +1,50 @@
 @media screen and (max-width: 588px){
+   
+    /*Header*/
+
+    .nav-list a {
+        display: none;
+    }
+
+    #nav-header{
+        height: auto;
+    }
+
+    #nav-header ul > a {
+        margin-bottom: 5px;
+    }
+
+    /*Tela Inicial */ 
+    #tela-inicial {
+        padding: 50px;
+        text-align: center;
+    }
+
+    #tela-inicial figure > img {
+        display: none;
+    }
+
+    /* Sobre */ 
+
+    #img-pessoas {
+        width: 250px;
+        
+    }
+
+    #img-smartphone {
+        display: none;
+    }
+
+    #sobre-4safe div > h1 {
+        padding-bottom: 20px;
+    }
+
+    #conteudo-sobre {
+        width: 250px;
+        text-align: center;
+    }
+
+    /* footer */
     #logo{
         display: none;
     }
@@ -33,6 +79,8 @@
      }
 }
 @media screen and (min-width: 589px) and (max-width:769px) {
+
+    /* Footer */
     #logo{
         display: none;
     }
@@ -89,6 +137,29 @@ button:active {
 }
 
 /*  Header */
+
+
+.nav-list {
+    list-style: none;
+    background-color: #3B4F66;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.mobile-menu div {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
 
 #logo-header {
     width: 170px;
@@ -179,8 +250,6 @@ button:active {
 }
 
 #sobre-4safe p {
-    width: 50em;
-    height: auto;
     font-size: 18px;
 }
 
@@ -195,13 +264,6 @@ button:active {
     margin-left: 100px;
 }
 
-
-#seguro-vida{
-    
-}
-#seguro-auto{
-    
-}
 
 /*  seção de contato*/
 #contato{
@@ -223,6 +285,7 @@ button:active {
 #contato #formulario{
     display: flex;
     flex-direction: column;
+
 }
 #contato>div>h2{
     margin-bottom: 40px;
@@ -242,11 +305,13 @@ button:active {
     height: 40px;
     width: 90%;
     padding: 10px 30px;
+    border: 0;
 }
 #contato #formulario input{
     border-radius: 7px;
     height: 30px;
     margin-top: 10px;
+    border: 0;
 }
 #contato #formulario label{
     margin-top: 20px;
@@ -254,6 +319,7 @@ button:active {
 #contato #formulario textarea{
     margin: 20px 0;
     border-radius: 10px;
+    border: 0;
 }
 
 /*   Footer */
