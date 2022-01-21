@@ -183,6 +183,7 @@ button:active {
     height: auto;
     font-size: 18px;
 }
+<<<<<<< HEAD
 
 
 #img-smartphone {
@@ -192,6 +193,17 @@ button:active {
 }
 
 #img-smartphone {
+=======
+
+
+#img-smartphone {
+    position: absolute;
+    width: 250px;
+    transform: translate(100%, 0%);
+}
+
+#img-smartphone {
+>>>>>>> 9c2f434ab7c366a7312b561e546d3842429f4c6c
     margin-left: 100px;
 }
 
@@ -225,6 +237,7 @@ width: 100%;
     margin-top: 40px;
 }
 
+<<<<<<< HEAD
 #seguro-vida>main a button:hover{
     background-color: #53da31;
 }
@@ -245,11 +258,15 @@ width: 100%;
     
 }
 #img-criancas{
+=======
+#seguro-vida{
+>>>>>>> 9c2f434ab7c366a7312b561e546d3842429f4c6c
     
 }
 
 /* seção auto */
 #seguro-auto{
+<<<<<<< HEAD
         background-color: #3B4F66;
         color: white;
         display: flex;
@@ -303,6 +320,10 @@ width: 100%;
 }
 
 
+=======
+    
+}
+>>>>>>> 9c2f434ab7c366a7312b561e546d3842429f4c6c
 
 /*  seção de contato*/
 #contato{
