@@ -1,6 +1,68 @@
+@media screen and (max-width: 588px){
+    #logo{
+        display: none;
+    }
+    #footer #rodape>div {
+       margin: 20px 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 10vh 10vh;
+        width: 100vw;
+    }
+     
+    #menu-footer ul{
+       display: flex;
+        flex-direction: column;
+    }
+    #menu-footer ul li{
+        margin: 10px 0;
+    }
+    #redes-sociais{
+       
+        justify-self: center;
+    }
+    #redes-sociais {
+        height: 100%;
+        
+    }
+    #rodape{
+        margin-bottom: 100px;
+    }
+    #contato>img{
+        display: none;
+     }
+}
+@media screen and (min-width: 589px) and (max-width:769px) {
+    #logo{
+        display: none;
+    }
+    #footer #rodape>div{
+        position: relative;
+        left: 70px;
+        
+        
+    }
+    #footer #menu-footer ul{
+        margin-bottom: 30px;
+    }
+    #contato>img{
+       display: none;
+    }
+}
+
+@media screen and (min-width:770px) and (max-width:992px) {
+    #contato>img{
+        height: 400px;
+    }
+    
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+    
+}
 *{
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a {
@@ -26,7 +88,7 @@ button:active {
     transform: scale(1.1);
 }
 
-
+/*  Header */
 
 #logo-header {
     width: 170px;
@@ -34,7 +96,6 @@ button:active {
 }
 
 #nav-header {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin-right: 50px;
 }
@@ -46,7 +107,6 @@ button:active {
 
 #nav-header button {
     border: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-weight: bold;
     padding: 8px;
@@ -54,9 +114,10 @@ button:active {
     background-color: #759f6a;
 }
 
+/* Tela inicial */
+
 #tela-inicial{
     background-color: #3B4F66;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     height: 87vh;
     display: flex;
@@ -77,7 +138,7 @@ button:active {
     width: 45em;
     height: auto;
     margin-top: 125px;
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 #apresentacao-tela-inicial h1, p {
@@ -94,7 +155,6 @@ button:active {
 
 #apresentacao-tela-inicial button {
     border: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 15px;
     background-color: #759f6a;
@@ -103,44 +163,198 @@ button:active {
     border-radius: 5px;
 }
 
-
-
-/* main > input{
-        margin-right: 66px;
-        margin-top: 33px;
-        margin-bottom: 33px;
-        padding: 10px;
-        color: #759F6A;
-} */
-
+/* Sobre */
 
 #sobre-4safe{
-    border: 2px solid rgb(187, 5, 81);
     background-color: #3B4F66;
     color: white;
+    padding: 200px;
+    padding-left: 20%;
 }
 
-/*#sobre-4safe.pessoas img{
+#sobre-4safe h1 {
+    font-size: 30px;
+    font-weight: bold;
     
 }
 
-#sobre-4safe.smartphone img{
-
-} */
-
-
-
-#seguro-vida{
-    border: 2px solid rgb(12, 162, 189);
-    height: 90vh;
+#sobre-4safe p {
+    width: 50em;
+    height: auto;
+    font-size: 18px;
 }
+
+
+#img-smartphone {
+    position: absolute;
+    width: 250px;
+    transform: translate(100%, 0%);
+}
+
+#img-smartphone {
+    margin-left: 100px;
+}
+
+/* seção seguro de vida */
+#seguro-vida{ 
+    background-color: #f5f5f5;
+    padding: 90px 0px;
+}
+#seguro-vida main{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 400px 1fr ;
+    align-items: center;
+    margin-left: 400px;
+}
+#bloco1{
+    border: 3px solid green;
+    width: 300px;
+    display: grid;
+    flex-direction: column;
+}
+#bloco1 img{
+width: 100%;
+    
+}
+#blocos{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 10px;
+    margin-bottom: 150px;
+    margin-top: 40px;
+}
+
+#seguro-vida>main a button:hover{
+    background-color: #53da31;
+}
+#seguro-vida>main a button{
+    background-color:#759f6a;
+    color: white;
+    font-weight: bolder;
+    border-radius: 7px;
+    height: 40px;
+    width: 22%;
+    padding: 10px 30px;
+    margin-top: 700px;
+}
+#img-familia{
+    
+}
+#img-menino{
+    
+}
+#img-criancas{
+    
+}
+
+/* seção auto */
 #seguro-auto{
-    border: 2px solid rgb(212, 72, 7);
-    height: 90vh;
+        background-color: #3B4F66;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 90px 0px;  
 }
+#seguro-auto>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#seguro-auto>img{
+    max-width: 600px;
+}
+#seguro-auto #formulario{
+    display: flex;
+    flex-direction: column;
+}
+#seguro-auto>div>h2{
+    margin-bottom: 40px;
+}
+
+#seguro-auto>div a button:hover{
+    background-color: #53da31;
+}
+#seguro-auto>div a button{
+    background-color:#759f6a;
+    color: white;
+    font-weight: bolder;
+    border-radius: 7px;
+    height: 40px;
+    width: 100%;
+    padding: 10px 30px;
+}
+#img-carinha{
+    width: 32px;
+    height: 32px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+#img-precobaixo{
+    width: 32px;
+    height: 32px;
+}
+#img-relogio{
+    width: 32px;
+    height: 32px;
+}
+#seguro-auto #formulario p{
+    text-align: end;
+}
+
+
+
+/*  seção de contato*/
 #contato{
-    border: 2px solid green;
-    height: 90vh;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 90px 0;
+    
+}
+#contato>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#contato>img{
+    max-width: 600px;
+}
+#contato #formulario{
+    display: flex;
+    flex-direction: column;
+}
+#contato>div>h2{
+    margin-bottom: 40px;
+} 
+#contato>div a{
+    width: 100%;
+    text-align: center;
+}
+#contato>div a button:hover{
+    background-color: #53da31;
+}
+#contato>div a button{
+    background-color:#759f6a ;
+    color: white;
+    font-weight: bolder;
+    border-radius: 7px;
+    height: 40px;
+    width: 90%;
+    padding: 10px 30px;
+}
+#contato #formulario input{
+    border-radius: 7px;
+    height: 30px;
+    margin-top: 10px;
+}
+#contato #formulario label{
+    margin-top: 20px;
+}
+#contato #formulario textarea{
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
 /*   Footer */
@@ -182,41 +396,7 @@ button:active {
     background-color: #759f6a;
     border-radius: 30px;
 }
-@media screen and (max-width:661px) {
- #logo{
-     display: none;
- }
- #footer #rodape>div {
-    margin: 20px 0;
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 10vh 10vh;
-     width: 100vw;
- }
-  
- #menu-footer ul{
-    display: flex;
-     flex-direction: column;
- }
- #menu-footer ul li{
-     margin: 10px 0;
- }
- #redes-sociais{
-    
-     justify-self: center;
- }
-    
-    
-}
-@media screen and (max-width:629px){
-    #redes-sociais {
-        height: 100%;
-        
-    }
-    #rodape{
-        margin-bottom: 100px;
-    }
-} 
+
  #redes-sociais{
     margin: 20px 0;
     width: 70vw;
