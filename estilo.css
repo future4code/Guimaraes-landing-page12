@@ -1,3 +1,64 @@
+@media screen and (max-width: 588px){
+    #logo{
+        display: none;
+    }
+    #footer #rodape>div {
+       margin: 20px 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 10vh 10vh;
+        width: 100vw;
+    }
+     
+    #menu-footer ul{
+       display: flex;
+        flex-direction: column;
+    }
+    #menu-footer ul li{
+        margin: 10px 0;
+    }
+    #redes-sociais{
+       
+        justify-self: center;
+    }
+    #redes-sociais {
+        height: 100%;
+        
+    }
+    #rodape{
+        margin-bottom: 100px;
+    }
+    #contato>img{
+        display: none;
+     }
+}
+@media screen and (min-width: 589px) and (max-width:769px) {
+    #logo{
+        display: none;
+    }
+    #footer #rodape>div{
+        position: relative;
+        left: 70px;
+        
+        
+    }
+    #footer #menu-footer ul{
+        margin-bottom: 30px;
+    }
+    #contato>img{
+       display: none;
+    }
+}
+
+@media screen and (min-width:770px) and (max-width:992px) {
+    #contato>img{
+        height: 400px;
+    }
+    
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+    
+}
 *{
     margin: 0;
     padding: 0;
@@ -141,61 +202,58 @@ button:active {
 #seguro-auto{
     
 }
+
+/*  seção de contato*/
 #contato{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 90px 0;
     
 }
-
-@media screen and (max-width: 588px){
-    #logo{
-        display: none;
-    }
-    #footer #rodape>div {
-       margin: 20px 0;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 10vh 10vh;
-        width: 100vw;
-    }
-     
-    #menu-footer ul{
-       display: flex;
-        flex-direction: column;
-    }
-    #menu-footer ul li{
-        margin: 10px 0;
-    }
-    #redes-sociais{
-       
-        justify-self: center;
-    }
-    #redes-sociais {
-        height: 100%;
-        
-    }
-    #rodape{
-        margin-bottom: 100px;
-    }
-}
-@media screen and (min-width: 589px) and (max-width:769px) {
-    #logo{
-        display: none;
-    }
-    #footer #rodape>div{
-        position: relative;
-        left: 70px;
-        
-        
-    }
-    #footer #menu-footer ul{
-        margin-bottom: 30px;
-    }
-}
-
-@media screen and(min-width:770px) and (max-width:992px) {
+#contato>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
-@media screen and(min-width:993px) and (max-width:1200px) {
-    
+#contato>img{
+    max-width: 600px;
+}
+#contato #formulario{
+    display: flex;
+    flex-direction: column;
+}
+#contato>div>h2{
+    margin-bottom: 40px;
+} 
+#contato>div a{
+    width: 100%;
+    text-align: center;
+}
+#contato>div a button:hover{
+    background-color: #53da31;
+}
+#contato>div a button{
+    background-color:#759f6a ;
+    color: white;
+    font-weight: bolder;
+    border-radius: 7px;
+    height: 40px;
+    width: 90%;
+    padding: 10px 30px;
+}
+#contato #formulario input{
+    border-radius: 7px;
+    height: 30px;
+    margin-top: 10px;
+}
+#contato #formulario label{
+    margin-top: 20px;
+}
+#contato #formulario textarea{
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
 /*   Footer */
