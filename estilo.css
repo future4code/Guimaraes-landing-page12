@@ -330,6 +330,7 @@ button:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 30px;
 }
 
 #apresentacao-tela-inicial {
@@ -401,7 +402,7 @@ button:active {
 
 
 #img-smartphone {
-    position: absolute;
+    position: relative;
     width: 250px;
     transform: translate(100%, 0%);
 }
