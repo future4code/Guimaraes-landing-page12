@@ -124,6 +124,10 @@
     #img-smartphone {
         display: none;
     }
+
+    #tela-inicial figure > img {
+        display: none;
+     }
 }
 
 @media screen and (min-width:770px) and (max-width:992px) {
@@ -135,12 +139,21 @@
         display: none;
     }
 
+    #tela-inicial figure > img {
+        display: none;
+     }
+
 }
 @media screen and (min-width:993px) and (max-width:1200px) {
     #img-smartphone {
         display: none;
     }
+
+    #tela-inicial figure > img {
+       display: none;
+    }
 }
+
 *{
     margin: 0;
     padding: 0;
