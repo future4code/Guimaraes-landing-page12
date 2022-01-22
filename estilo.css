@@ -120,6 +120,10 @@
     #contato>img{
        display: none;
     }
+
+    #img-smartphone {
+        display: none;
+    }
 }
 
 @media screen and (min-width:770px) and (max-width:992px) {
@@ -127,9 +131,15 @@
         height: 400px;
     }
     
+    #img-smartphone {
+        display: none;
+    }
+
 }
 @media screen and (min-width:993px) and (max-width:1200px) {
-    
+    #img-smartphone {
+        display: none;
+    }
 }
 *{
     margin: 0;
@@ -279,7 +289,7 @@ button:active {
 
 
 #img-smartphone {
-    position: absolute;
+    position: relative;
     width: 250px;
     transform: translate(100%, 0%);
 }
