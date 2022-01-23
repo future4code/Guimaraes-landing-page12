@@ -7,6 +7,11 @@
     <title>4SAFE</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="./img/logo.png" >
+    <script>
+        function fecharMenu(){
+            let botao=document.getElementById('check').checked=false
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -19,9 +24,10 @@
             <label for="check" id="check-btn">&#9776;</label>
 
             <ul class="nav-list">
-                <a href="#sobre-4safe">SOBRE A 4SAFE</a>
-                <a href="#seguro-vida">SEGURO DE VIDA</a>
-                <a href="#seguro-auto">SEGURO AUTO</a>
+                <a href="#sobre-4safe" onclick="fecharMenu()">SOBRE A 4SAFE</a>
+                <a href="#seguro-vida" onclick="fecharMenu()">SEGURO DE VIDA</a>
+                <a href="#seguro-vida" onclick="fecharMenu()">SEGURO DE VIDA</a>
+                <a href="#seguro-auto" onclick="fecharMenu()">SEGURO AUTO</a>
                 <a href="#contato">CONTATO</a>
                 <button>PORTAL DO CLIENTE</button>
 
