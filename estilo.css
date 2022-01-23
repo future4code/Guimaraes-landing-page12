@@ -1,10 +1,48 @@
 @media screen and (max-width: 588px){
  
     /*Header*/
-
-    .nav-list a {
-        display: none;
+    #nav-header #check-btn{
+        display: block;
+        font-size:70px;
     }
+    #nav-header ul{
+        
+        position:absolute;
+        width: 100%;
+        height: 70vh;
+        background-color: 4F66;
+        top:160px ;
+        left: -120%;
+        text-align: center;
+        transition:all .5s ;
+        flex-direction: column;
+    }
+    #nav-header ul button{
+        margin-top: 20px;
+        height: 40px;
+    }
+    #nav-header ul button:hover{
+        background-color: #53da31;
+    }
+    #nav-header ul a:hover{
+        background-color: #53da31;
+
+    }
+    #nav-header ul a{
+        border: 1px solid #759f6a;
+        width: 100%;
+        line-height: 15vh;
+       
+    }
+    
+    #check:checked~ul{
+        left: 0;
+        
+
+    }
+        
+
+
 
 
     #nav-header ul > a {
@@ -128,6 +166,48 @@
     #tela-inicial figure > img {
         display: none;
      }
+     #nav-header #check-btn{
+        display: block;
+        font-size:70px;
+
+        
+    }
+    #nav-header ul{
+        
+        position:absolute;
+        width: 100%;
+        height: 70vh;
+        background-color: 4F66;
+        top:160px ;
+        left: -120%;
+        text-align: center;
+        transition:all .5s ;
+        flex-direction: column;
+    }
+    
+    #nav-header ul button{
+        margin-top: 20px;
+        height: 40px;
+    }
+    #nav-header ul button:hover{
+        background-color: #53da31;
+    }
+    #nav-header ul a:hover{
+        background-color: #53da31;
+
+    }
+    #nav-header ul a{
+        border: 1px solid #759f6a;
+        width: 100%;
+        line-height: 15vh;
+       
+    }
+    #check:checked~ul{
+        left: 0;
+        z-index: 4;
+
+    }
+    
 }
 
 @media screen and (min-width:770px) and (max-width:992px) {
@@ -163,7 +243,16 @@
 a {
     text-decoration: none;
 }
+#check-btn{
+    font-size: 30px;
+    line-height: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
 
+}
 header {
     
     background-color: #3B4F66;
