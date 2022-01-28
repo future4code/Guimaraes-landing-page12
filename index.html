@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4SAFE</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="./img/logo.png" >
+    <script>
+        function fecharMenu(){
+            let botao=document.getElementById('check').checked=false
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <figure>
+            <img id="logo-header" src="./img/logo.png" alt="logo-4safe">
+        </figure>
+
+        <nav id="nav-header">
+            <input type="checkbox" id="check">
+            <label for="check" id="check-btn">&#9776;</label>
+
+            <ul class="nav-list">
+                <a href="#sobre-4safe" onclick="fecharMenu()">SOBRE A 4SAFE</a>
+                <a href="#seguro-vida" onclick="fecharMenu()">SEGURO DE VIDA</a>
+                <a href="#seguro-vida" onclick="fecharMenu()">SEGURO DE VIDA</a>
+                <a href="#seguro-auto" onclick="fecharMenu()">SEGURO AUTO</a>
+                <a href="#contato">CONTATO</a>
+                <button>PORTAL DO CLIENTE</button>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="tela-inicial">
+            <figure>
+                <img src="img/casal.png" />
+            </figure> 
+            
+            <div id="apresentacao-tela-inicial">
+                <h1>4SAFE, seguro não é tudo igual!</h1>
+                <p>Seguros simples de usar pra levar a vida numa boa, você pode contar
+                com a gente para proteger e cuidar do seu patrimônio. Temos as melhores
+                soluções em seguros.</p>
+                <button>SIMULAR</button>
+            </div> 
+            
+        </section>
+
+        <section id="sobre-4safe">
+            <div id="conteudo-sobre">
+                <h1>Sobre a 4SAFE</h1>
+                <p>A 4Safe é uma empresa focada na digitalização dos produtos de seguridade. Sua proposta é oferecer
+                    seguros de vida e de carro para clientes jovens que não gostam da burocracia das seguradoras
+                    tradicionais. </p>
+            </div>
+
+            <figure id="imagens-sobre">
+                <img id="img-pessoas" src="img/jovens-img.png" alt="conjunto de pessoas" />
+                <img id="img-smartphone" src="img/smartphone.png" alt="celular com aplicativo da empresa na tela" />
+            </figure>
+
+        </section>
+
+        <section id="seguro-vida">
+            <h1>Planos 4SAFE Vida</h1>
+            <p>Quando falamos em um seguro de vida para jovens trata-se de uma cobertura que traga tranquilidade ao segurado e que contemple todas as suas necessidades. 
+                A principal diferença entre esse tipo de seguro e o convencional é que a maior necessidade de um jovem, normalmente, não é proteger os familiares,
+                embora isso também possa ser incluso ao plano, e sim assegurar a sua independência financeira e garantir a manutenção da renda.</p>
+
+            <div id="box-cards">
+                <div class="cards">
+                    <img id="img-familia" src="./img/familia.png" alt="familia">
+                    <h4>Sua família protegida</h4>
+                    <p>Garanta seus planos e os da sua família em caso de morte, doença ou invalidez.</p>
+                </div>
+
+                <div class="cards">
+                    <img id="img-menino" src="./img/menino.png" alt="pessao-machucada">
+                    <h4>É para todas as horas</h4>
+                    <p>Por meio do aplicativo 4SAFE abra chamado aonde estiver,
+                        com a nossa equipe 24h por dia você não precisa se preocupar.</p>
+                </div>
+
+                <div class="cards">
+                    <img id="img-criancas" src="./img/crianças.png" alt="pessoas-se-divertindo">
+                    <h4>Sinta-se livre para aventurar-se!</h4>
+                    <p>Aproveite sua vida ao máximo sem preocupações.</p>
+                </div>
+
+            </div>
+
+            <button id="botao-cotacao">Fazer Cotação</button>
+
+        </section>
+
+        <section id="seguro-auto">
+            <div class="apresentao-seguro-auto">
+                <h1>Plano 4SAFE Auto</h1>
+                <p>Tem tudo o que você sempre quis no seguro do seu carro e muito mais.
+                No Seguro 4SAFE Auto, você encontra coberturas completas e uma ampla rede de serviços para simplificar o seu dia a dia.
+                Esse é um seguro de automóvel com o qual você pode contar.</p>
+            </div>
+            <div id="conteudo-auto">
+                <figure>
+                    <img id="img-carro" src="./img/carro.png" alt="veiculo-com-pessoas-ao-redor">
+                </figure>
+
+                <div id="box-auto">
+                    <h1>Por que contatar o seguro de automóvel da 4SAFE?</h1>
+
+                    <div id="box-beneficios">
+                        <div class="elementos-beneficios">
+                            <img src="./img/carinha-feliz.png" alt="carinha-feliz">
+                            <p>Contratação facilitada, muito rápida.</p>
+                        </div>
+
+                        <div class="elementos-beneficios">
+                            <img src="./img/preco-baixo.png" alt="preco-baixo">
+                            <p>Preço acessivel a todos!</p>
+                        </div>
+
+                        <div class="elementos-beneficios">
+                            <img src="./img/relogio.png" alt="relogio">
+                            <p>Disponivel 24h.</p>
+                        </div>
+
+                        <button id="botao-auto">Fazer Cotação</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <img id="imagem-contato" src="./img/man.png" alt="">
+            <div >
+                <h2>Fale conosco</h2>
+                <form action="" id="formulario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    <label for="telefone">telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" name="email" placeholder="Digite seu E-mail" required>
+                    <label for="comentario">Comentário:</label>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Digite aqui seu comentário"></textarea>
+                </form>
+                <a href=""><button>Enviar</button></a>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <nav id="menu-footer">
+            <ul>
+                <li>
+                    <a href="#sobre-4safe">SOBRE A 4SAFE</a>
+                </li>
+                <li>
+                    <a href="#seguro-vida">SEGURO VIDA</a>
+                </li>
+                <li>
+                    <a href="#seguro-auto">SEGURO AUTO</a>
+                </li>
+                <li>
+                    <a href="#contato">CONTATO</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="rodape">
+            <a href="index.html" id="logo"><img  src="./img/logo.png" alt="logotipo"></a>
+            <div>
+                <h3>Siga-nos:</h3>
+                <div id="redes-sociais">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt=""></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube.png" alt="youtube"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="facebook"></a>
+                    <a href="https://twitter.com/ " target="_blank"><img src="./img/twitter.png" alt="twitter"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="./img/linkedin.png" alt="linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <p>Copyright © 2022 4Safe - Todos os direitos reservados</p>
+</body>
+</html>

@@ -1,0 +1,638 @@
+@media screen and (max-width: 588px){
+ 
+    /*Header*/
+    #nav-header #check-btn{
+        display: block;
+        font-size:70px;
+    }
+    #nav-header ul{
+        
+        position:absolute;
+        width: 100%;
+        height: 70vh;
+        background-color: 4F66;
+        top:160px ;
+        left: -120%;
+        text-align: center;
+        transition:all .5s ;
+        flex-direction: column;
+    }
+    #nav-header ul button{
+        margin-top: 20px;
+        height: 40px;
+    }
+    #nav-header ul button:hover{
+        background-color: #53da31;
+    }
+    #nav-header ul a:hover{
+        background-color: #53da31;
+
+    }
+    #nav-header ul a{
+        border: 1px solid #759f6a;
+        width: 100%;
+        line-height: 15vh;
+       
+    }
+    
+    #check:checked~ul{
+        left: 0;
+        
+
+    }
+        
+
+
+
+
+    #nav-header ul > a {
+        margin-bottom: 5px;
+    }
+
+    /*Tela Inicial */ 
+    #tela-inicial {
+        padding: 50px;
+        text-align: center;
+    }
+
+    #tela-inicial figure > img {
+        display: none;
+    }
+
+    /* Sobre */ 
+
+    #img-pessoas {
+        width: 250px;
+        
+    }
+
+    #img-smartphone {
+        display: none;
+    }
+
+    #sobre-4safe div > h1 {
+        padding-bottom: 20px;
+    }
+
+    #conteudo-sobre {
+        width: 250px;
+        text-align: center;
+    }
+
+    /* Seguro vida */ 
+
+    #seguro-vida p {
+        text-align: center;
+    }
+    
+ .apresentao-seguro-auto {
+     text-align: center;
+ }
+
+    #box-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* seguro auto */ 
+
+    #img-carro {
+        display: none;
+    }
+
+    #box-auto {
+        margin: 20px;
+    }
+
+    /* footer */
+    #logo{
+        display: none;
+    }
+    #footer #rodape>div {
+       margin: 20px 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 10vh 10vh;
+        width: 100vw;
+    }
+     
+    #menu-footer ul{
+       display: flex;
+        flex-direction: column;
+    }
+    #menu-footer ul li{
+        margin: 10px 0;
+    }
+    #redes-sociais{
+       
+        justify-self: center;
+    }
+    #redes-sociais {
+        height: 100%;
+        
+    }
+    #rodape{
+        margin-bottom: 100px;
+    }
+    #contato>img{
+        display: none;
+     }
+}
+@media screen and (min-width: 589px) and (max-width:769px) {
+
+    /* Footer */
+    #logo{
+        display: none;
+    }
+    #footer #rodape>div{
+        position: relative;
+        left: 70px;
+        
+        
+    }
+    #footer #menu-footer ul{
+        margin-bottom: 30px;
+    }
+    #contato>img{
+       display: none;
+    }
+
+    #img-smartphone {
+        display: none;
+    }
+
+    #tela-inicial figure > img {
+        display: none;
+     }
+     #nav-header #check-btn{
+        display: block;
+        font-size:70px;
+
+        
+    }
+    #nav-header ul{
+        
+        position:absolute;
+        width: 100%;
+        height: 70vh;
+        background-color: 4F66;
+        top:160px ;
+        left: -120%;
+        text-align: center;
+        transition:all .5s ;
+        flex-direction: column;
+    }
+    
+    #nav-header ul button{
+        margin-top: 20px;
+        height: 40px;
+    }
+    #nav-header ul button:hover{
+        background-color: #53da31;
+    }
+    #nav-header ul a:hover{
+        background-color: #53da31;
+
+    }
+    #nav-header ul a{
+        border: 1px solid #759f6a;
+        width: 100%;
+        line-height: 15vh;
+       
+    }
+    #check:checked~ul{
+        left: 0;
+        z-index: 4;
+
+    }
+    
+}
+
+@media screen and (min-width:770px) and (max-width:992px) {
+    #contato>img{
+        height: 400px;
+    }
+    
+    #img-smartphone {
+        display: none;
+    }
+
+    #tela-inicial figure > img {
+        display: none;
+     }
+
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+    #img-smartphone {
+        display: none;
+    }
+
+    #tela-inicial figure > img {
+       display: none;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+#check-btn{
+    font-size: 30px;
+    line-height: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+
+}
+header {
+    
+    background-color: #3B4F66;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    
+}
+
+
+button:active {
+    transform: scale(1.1);
+}
+
+/*  Header */
+
+
+.nav-list {
+    list-style: none;
+    background-color: #3B4F66;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.mobile-menu div {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+#logo-header {
+    width: 170px;
+    padding-left: 50px;
+}
+
+#nav-header {
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+#nav-header a {
+    color: white;
+    margin-right: 20px;
+}
+
+#nav-header button {
+    border: 0;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #759f6a;
+}
+
+/* Tela inicial */
+
+#tela-inicial{
+    background-color: #3B4F66;
+    color: white;
+    height: 87vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#apresentacao-tela-inicial {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#tela-inicial figure > img {
+    width: 45em;
+    height: auto;
+    margin-top: 125px;
+    margin-left: 150px;
+}
+
+#apresentacao-tela-inicial h1, p {
+    margin-bottom: 50px;
+}
+
+#apresentacao-tela-inicial h1 {
+    font-size: 35px;
+}
+
+#apresentacao-tela-inicial p {
+    font-size: 20px;
+}
+
+#apresentacao-tela-inicial button {
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #759f6a;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Sobre */
+
+#sobre-4safe{
+    background-color: #3B4F66;
+    color: white;
+    padding: 200px;
+    padding-left: 20%;
+}
+
+#sobre-4safe h1 {
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+#sobre-4safe p {
+    font-size: 18px;
+}
+
+
+#img-smartphone {
+    position: relative;
+    width: 250px;
+    transform: translate(100%, 0%);
+}
+
+#img-smartphone {
+    margin-left: 100px;
+}
+
+
+/* Seçao Seguro de Vida */ 
+
+#seguro-vida {
+    background-color: #f5f5f5;
+    padding: 70px;
+}
+
+#seguro-vida h1 {
+    padding-bottom: 50px;
+}
+
+#seguro-vida p {
+    padding-bottom: 100px;
+}
+
+#box-cards {
+    display: flex;
+    
+    justify-content: space-around;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+}
+
+.cards h4 {
+    padding-bottom: 20px;
+}
+
+#img-familia {
+    width: 400px;
+    padding-bottom: 10px;
+}
+
+#img-menino {
+    width: 180px;
+    padding-bottom: 28px;
+}
+
+#img-criancas{
+    width: 250px;
+    padding-bottom: 34px;
+}
+
+#botao-cotacao {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    background-color: #759f6a; 
+    padding: 20px;
+    border-radius: 10px; 
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+
+/* Seguro auto */ 
+
+ #seguro-auto {
+    background-color: #3B4F66;
+    color: #f5f5f5;
+    padding-bottom: 50px;
+}
+
+.apresentao-seguro-auto {
+    padding: 50px;
+    
+}
+
+.apresentao-seguro-auto h1 {
+    margin-bottom: 20px;
+}
+
+#conteudo-auto {
+    display: flex;
+    justify-content: space-around;
+}
+
+#box-auto {
+    text-align: center;
+}
+
+#box-auto h1 {
+    margin-bottom: 50px;
+}
+
+.elementos-beneficios {
+    display: flex;
+    align-items: center;
+}
+
+.elementos-beneficios img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+#botao-auto {
+    border: 0;
+    background-color: #759f6a;
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;  
+}
+
+/*  seção de contato*/
+#contato{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 90px 0;
+    
+}
+#contato>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#contato>img{
+    max-width: 600px;
+}
+#contato #formulario{
+    display: flex;
+    flex-direction: column;
+
+}
+#contato>div>h2{
+    margin-bottom: 40px;
+} 
+#contato>div a{
+    width: 100%;
+    text-align: center;
+}
+#contato>div a button:hover{
+    background-color: #53da31;
+}
+#contato>div a button{
+    background-color:#759f6a ;
+    color: white;
+    font-weight: bolder;
+    border-radius: 7px;
+    height: 40px;
+    width: 90%;
+    padding: 10px 30px;
+    border: 0;
+}
+#contato #formulario input{
+    border-radius: 7px;
+    height: 30px;
+    margin-top: 10px;
+    border: 0;
+}
+#contato #formulario label{
+    margin-top: 20px;
+}
+#contato #formulario textarea{
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 0;
+}
+
+/*   Footer */
+#footer{
+    background-color: #3b4f66;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+#footer div a img{
+    height: 7vh;
+}
+#redes-sociais a{
+    margin: 0 12px;
+}
+#redes-sociais a:hover{
+    border: 3px solid #759f6a ;
+    background-color: #759f6a;
+    border-radius: 30px;
+}
+#footer div  #logo img{
+    height: 24vh;
+}
+#footer #menu-footer ul{
+    list-style: none;
+    display: flex;
+    
+    
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#footer #menu-footer ul li a{
+    text-decoration: none;
+}
+#footer #menu-footer ul li:hover{
+    background-color: #759f6a;
+    border-radius: 30px;
+}
+
+ #redes-sociais{
+    margin: 20px 0;
+    width: 70vw;
+    
+    
+ }
+ 
+
+#footer #rodape{
+    display: grid;
+    grid-template-columns: 20vw 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    
+    
+}
+
+#footer #menu-footer ul li a{
+    color: white;
+    margin: 0 20px;
+}
